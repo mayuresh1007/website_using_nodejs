@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    title iMaXX academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+      ul
+        #logo 
+          img(src="/static/slogo.png" alt="logo")
+          //- |imaxx
+        li #[a(href='/') Home]
+        li #[a(href='/') About ]
+        li #[a(href='/') Contact]
+        li #[a(href='/') Blog ]
+
+    section#introSection
+      div Welcome to iMaXX Dance club
+      div.small Eat Dance Sleep Repeat
+
+    section#missionSection
+      h2 Our mission
+      div.card 
+        h3 Dance perfection
+        div.card-box 
+          div.card-img
+            img(src="/static/1.png" alt="img")    
+          div.cardcontent
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, modi.
+      div.card 
+        h3 This Ganapati dance
+        div.card-box 
+          div.card-img
+            img(src="/static/1.png" alt="img")    
+          div.cardcontent
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, modi.
+      div.card 
+        h3 This is CLub
+        div.card-box 
+          div.card-img
+            img(src="/static/2.png" alt="img")    
+          div.cardcontent
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, modi.
+
+  section#sponcerSection
+    h2 Our Sponsor's
+    div#sponsors 
+      img(src="/static/slogo.png" alt="" srcset="" class="dspon")
+      img(src="/static/dspon.png" alt="" class="dspon")
+      img(src="/static/dspon2.png" alt="" class="dspon")
+
+  section#footer
+    | Copyright © 2021 imaxx.live | All rights reserved 
+
+    script
+      include ../static/index.js

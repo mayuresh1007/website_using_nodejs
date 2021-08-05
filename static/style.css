@@ -1,0 +1,186 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
+*{
+    /* font-size: 1.5rem; */
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Nunito';
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 10px;
+    
+}
+#logo img{
+    filter: invert(1);
+    height: 50px;
+    background-color: navajowhite;
+    
+}
+#navbar{
+    background-color: pink;
+    /* background: url("/static/bg.jpg"); */
+    /* background-color: transparent; */
+    /* padding: 10px 0px; */
+    margin:0px 0px;
+    /* z-index: -1; */
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    font-size: 1.1rem; 
+    margin: 6px 10px;
+
+}
+#navbar li a{
+    color: navy;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-size: 1.3rem;
+}
+#navbar li a:hover{
+    color: rgba(92, 92, 255, 0.819);
+    text-decoration: none;
+    padding: 8px 18px;
+    font-weight: bolder;
+}
+#introSection{
+    background: center / cover no-repeat url("/static/bg.jpg");
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: sans-serif;
+    font-size: 2.5rem;
+    height: 300px;
+}
+#introSection div {
+    font-size: 2rem;
+}
+#sponsors{
+    text-align: center;
+}
+#sponcerSection{
+    height: 300px;
+    background-color: pink;
+}
+#sponcerSection h2{
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 1.7rem;
+}
+#missionSection{
+    height: 300px;
+    background-color: rgb(252, 213, 219);
+}
+#missionSection h2{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    padding-top: 25px;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+    height: 200px;
+    margin: 0px 20px;
+    display: inline-flex;
+    background-color: rgb(219, 129, 129);
+}
+
+/* media query */
+@media only screen and (max-width: 1203px) {
+    body{
+        height: 100vh;
+    }
+    .card{
+        height: fit-content;
+        width: fit-content;
+        /* margin: 1rem; */
+        margin: 10px 209px;
+    }
+    .cardcontent{
+        height: fit-content;
+        width: fit-content;
+    }
+    .cardcontent p{
+        text-align: center;
+        justify-content: center;
+        padding-right: 1rem;
+        
+    }
+    #missionSection h2{
+        justify-content: center;
+    }
+    #missionSection{
+        height: fit-content;
+        width: fit-content;
+    }
+    #sponcerSection{
+        height: fit-content;
+        /* width: fit-content; */
+        padding: 0px 150px
+    }
+    .dspon{
+        margin: 1rem;
+    }
+}
+div.card h3{
+    text-align: center;
+    display: block;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+    margin-inline-start: 15px;
+    margin-inline-end: -8px;
+}
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img img{
+    height: 150px;
+    /* padding:0 14px; */
+}
+#sponsors img{
+    height: 100px;
+    margin: 47px 46px;
+    /* max-width: 100%; height: auto;  */
+    justify-content: space-evenly;
+    /* margin: 10px auto;
+    display: flex; */
+
+
+}
+.dspon{
+    height: 150px;
+
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 133, 153);
+}
+#introSection div.small{
+    font-size: 1.8rem;
+    /* color: navy; */
+
+}

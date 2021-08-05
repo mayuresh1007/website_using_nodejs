@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/stylecontact.css
+        
+block content 
+    div.container
+        h1 Contact Us
+        form(class="myform",action="/contact",method="post")
+            input(type="text" ,class="myinput", name="name", placeholder="name")
+            input(type="text" ,class="myinput", name="phone", placeholder="phone")
+            input(type="email" ,class="myinput", name="email", placeholder="Email")
+            input(type="text" ,class="myinput", name="adrs", placeholder="adrs")
+            button(class="btn")
+                | submit 
+    section#sponcerSection
+        h2 Our Sponsor's
+        div#sponsors 
+            //- img(src="/static/slogo.png" alt="" srcset="" class="dspon")
+            img(src="/static/dspon.png" alt="" class="dspon")
+            img(src="/static/dspon2.png" alt="" class="dspon")

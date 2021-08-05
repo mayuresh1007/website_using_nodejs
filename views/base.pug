@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        //- meta(charset='utf-8')
+        //- meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        //- meta(name='description', content='Some description')
+        //- meta(name='viewport', content='width=device-width, initial-scale=1')
+        title iMaXX academy
+        block scripts
+        block style
+
+    body
+        nav#navbar.top 
+            ul
+                #logo 
+                    img(src="/static/slogo.png" alt="logo")
+                //- button(class="hamberger" id="hamberger") 
+                //-     i hamberger
+                li #[a(href='/') Home]
+                li #[a(href='/') About ]
+                li #[a(href='/contact') Contact]
+                li #[a(href='/') Blog ]
+                    
+            hr
+        block content
+
+        section#footer
+            | Copyright © 2021 imaxx.live | All rights reserved 
